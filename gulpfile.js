@@ -124,7 +124,7 @@ gulp.task('bump', function (complete) {
 
 // create a release and tag it in git
 gulp.task('release', ['build'], function () {
-    exec('git tag -a v' + projectPackage.version);
+    exec('git tag v' + projectPackage.version);
 });
 
 gulp.task('default', function () {
