@@ -1,12 +1,12 @@
-$font-path: '../fonts/' !default;
+$icon-font-path: '../fonts/' !default;
 
 @font-face {
 	font-family: "miekons";
-	src: url('#{$font-path}miekons.eot');
-	src: url('#{$font-path}miekons.eot?#iefix') format('eot'),
-	url('#{$font-path}miekons.woff') format('woff'),
-	url('#{$font-path}miekons.ttf') format('truetype'),
-	url('#{$font-path}miekons.svg#miekons') format('svg');
+	src: url('#{$icon-font-path}miekons.eot');
+	src: url('#{$icon-font-path}miekons.eot?#iefix') format('eot'),
+	url('#{$icon-font-path}miekons.woff') format('woff'),
+	url('#{$icon-font-path}miekons.ttf') format('truetype'),
+	url('#{$icon-font-path}miekons.svg#miekons') format('svg');
 }
 
 @mixin miekons-styles {
