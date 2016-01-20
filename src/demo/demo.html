@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title><%= fontName %> demo</title>
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <h1><%= fontName %></h1>
+
+    <ul class="glyphs"><% _.each(glyphs, function(glyph) { %>
+        <li class="glyph">
+            <i class="icon <%= cssClass %>-<%= glyph.name %>"></i>
+            <span class="glyph-name">.<%= cssClass %>-<%= glyph.name %></span>
+            <span class="glyph-codepoint"><%= glyph.unicode %></span>
+        </li><% }); %>
+    </ul>
+</div>
+
+</body>
+</html>

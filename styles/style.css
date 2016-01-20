@@ -1,0 +1,192 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "id-icons";
+  src: url("../fonts/id-icons.eot");
+  src: url("../fonts/id-icons.eot?#iefix") format("eot"), url("../fonts/id-icons.woff") format("woff"), url("../fonts/id-icons.ttf") format("truetype"), url("../fonts/id-icons.svg#id-icons") format("svg"); }
+
+.id-icons-space:before, .id-icons-add-folder:before, .id-icons-add-remove:before, .id-icons-add-selection:before, .id-icons-add-solid:before, .id-icons-add:before, .id-icons-bolt:before, .id-icons-cat-community:before, .id-icons-cat-default:before, .id-icons-cat-education:before, .id-icons-cat-housing:before, .id-icons-cat-large-area-forecasts:before, .id-icons-cat-population-forecasts:before, .id-icons-cat-transport-comms:before, .id-icons-cat-work-income:before, .id-icons-catpop:before, .id-icons-checkbox-checked:before, .id-icons-checkbox:before, .id-icons-chevron-down:before, .id-icons-chevron-left:before, .id-icons-chevron-right:before, .id-icons-chevron-up:before, .id-icons-clear:before, .id-icons-close:before, .id-icons-cross-circle-solid:before, .id-icons-cross:before, .id-icons-down:before, .id-icons-drag:before, .id-icons-edit:before, .id-icons-filter-remove:before, .id-icons-filter:before, .id-icons-folder:before, .id-icons-hamburger:before, .id-icons-hidden:before, .id-icons-histogram:before, .id-icons-info:before, .id-icons-layers:before, .id-icons-left:before, .id-icons-locate:before, .id-icons-locked:before, .id-icons-minus-solid:before, .id-icons-minus:before, .id-icons-options:before, .id-icons-pin:before, .id-icons-plus:before, .id-icons-remove:before, .id-icons-report:before, .id-icons-right:before, .id-icons-saved-view:before, .id-icons-search:before, .id-icons-share:before, .id-icons-star:before, .id-icons-table:before, .id-icons-tick:before, .id-icons-trash:before, .id-icons-un-pin:before, .id-icons-unlocked:before, .id-icons-up:before, .id-icons-visible:before {
+  font-family: "id-icons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none; }
+
+.id-icons-space:before {
+  content: " "; }
+
+.id-icons-add-folder:before {
+  content: ""; }
+
+.id-icons-add-remove:before {
+  content: ""; }
+
+.id-icons-add-selection:before {
+  content: ""; }
+
+.id-icons-add-solid:before {
+  content: ""; }
+
+.id-icons-add:before {
+  content: ""; }
+
+.id-icons-bolt:before {
+  content: ""; }
+
+.id-icons-cat-community:before {
+  content: ""; }
+
+.id-icons-cat-default:before {
+  content: ""; }
+
+.id-icons-cat-education:before {
+  content: ""; }
+
+.id-icons-cat-housing:before {
+  content: ""; }
+
+.id-icons-cat-large-area-forecasts:before {
+  content: ""; }
+
+.id-icons-cat-population-forecasts:before {
+  content: ""; }
+
+.id-icons-cat-transport-comms:before {
+  content: ""; }
+
+.id-icons-cat-work-income:before {
+  content: ""; }
+
+.id-icons-catpop:before {
+  content: ""; }
+
+.id-icons-checkbox-checked:before {
+  content: ""; }
+
+.id-icons-checkbox:before {
+  content: ""; }
+
+.id-icons-chevron-down:before {
+  content: ""; }
+
+.id-icons-chevron-left:before {
+  content: ""; }
+
+.id-icons-chevron-right:before {
+  content: ""; }
+
+.id-icons-chevron-up:before {
+  content: ""; }
+
+.id-icons-clear:before {
+  content: ""; }
+
+.id-icons-close:before {
+  content: ""; }
+
+.id-icons-cross-circle-solid:before {
+  content: ""; }
+
+.id-icons-cross:before {
+  content: ""; }
+
+.id-icons-down:before {
+  content: ""; }
+
+.id-icons-drag:before {
+  content: ""; }
+
+.id-icons-edit:before {
+  content: ""; }
+
+.id-icons-filter-remove:before {
+  content: ""; }
+
+.id-icons-filter:before {
+  content: ""; }
+
+.id-icons-folder:before {
+  content: ""; }
+
+.id-icons-hamburger:before {
+  content: ""; }
+
+.id-icons-hidden:before {
+  content: ""; }
+
+.id-icons-histogram:before {
+  content: ""; }
+
+.id-icons-info:before {
+  content: ""; }
+
+.id-icons-layers:before {
+  content: ""; }
+
+.id-icons-left:before {
+  content: ""; }
+
+.id-icons-locate:before {
+  content: ""; }
+
+.id-icons-locked:before {
+  content: ""; }
+
+.id-icons-minus-solid:before {
+  content: ""; }
+
+.id-icons-minus:before {
+  content: ""; }
+
+.id-icons-options:before {
+  content: ""; }
+
+.id-icons-pin:before {
+  content: ""; }
+
+.id-icons-plus:before {
+  content: ""; }
+
+.id-icons-remove:before {
+  content: ""; }
+
+.id-icons-report:before {
+  content: ""; }
+
+.id-icons-right:before {
+  content: ""; }
+
+.id-icons-saved-view:before {
+  content: ""; }
+
+.id-icons-search:before {
+  content: ""; }
+
+.id-icons-share:before {
+  content: ""; }
+
+.id-icons-star:before {
+  content: ""; }
+
+.id-icons-table:before {
+  content: ""; }
+
+.id-icons-tick:before {
+  content: ""; }
+
+.id-icons-trash:before {
+  content: ""; }
+
+.id-icons-un-pin:before {
+  content: ""; }
+
+.id-icons-unlocked:before {
+  content: ""; }
+
+.id-icons-up:before {
+  content: ""; }
+
+.id-icons-visible:before {
+  content: ""; }

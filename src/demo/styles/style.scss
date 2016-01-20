@@ -1,0 +1,40 @@
+$font-path: '../../fonts/';
+
+@import 'reset';
+@import '../../../dist/styles/style.css';
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+
+.wrapper {
+    margin: 40px;
+}
+
+.glyphs {
+    list-style: none;
+
+    .glyph {
+        width: 50%;
+        float: left;
+        border-bottom: 1px solid #f4f4f4;
+
+        .icon {
+            font-size: 24px;
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+
+        .glyph-name {
+        }
+
+        .glyph-codepoint {
+            opacity: 0.5;
+        }
+    }
+}

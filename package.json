@@ -1,0 +1,25 @@
+{
+  "name": "id-icons",
+  "version": "0.1.0",
+  "description": "Template for generating icon fonts",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-iconfont": "^5.0.1",
+    "gulp-iconfont-css": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.1.1",
+    "gulp-util": "^3.0.7",
+    "inquirer": "^0.11.2",
+    "lodash": "^4.0.0",
+    "semver": "^5.1.0"
+  }
+}

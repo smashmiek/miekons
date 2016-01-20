@@ -1,0 +1,399 @@
+$font-path: '../fonts/' !default;
+
+@font-face {
+	font-family: "id-icons";
+	src: url('#{$font-path}id-icons.eot');
+	src: url('#{$font-path}id-icons.eot?#iefix') format('eot'),
+	url('#{$font-path}id-icons.woff') format('woff'),
+	url('#{$font-path}id-icons.ttf') format('truetype'),
+	url('#{$font-path}id-icons.svg#id-icons') format('svg');
+}
+
+@mixin id-icons-styles {
+	font-family: "id-icons";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%id-icons {
+	@include id-icons-styles;
+}
+
+@function id-icons-char($filename) {
+	$char: "";
+
+	@if $filename == "space" {
+	$char: "\20";
+}
+	@if $filename == "add-folder" {
+	$char: "\EA01";
+}
+	@if $filename == "add-remove" {
+	$char: "\EA02";
+}
+	@if $filename == "add-selection" {
+	$char: "\EA03";
+}
+	@if $filename == "add-solid" {
+	$char: "\EA04";
+}
+	@if $filename == "add" {
+	$char: "\EA05";
+}
+	@if $filename == "bolt" {
+	$char: "\EA06";
+}
+	@if $filename == "cat-community" {
+	$char: "\EA07";
+}
+	@if $filename == "cat-default" {
+	$char: "\EA08";
+}
+	@if $filename == "cat-education" {
+	$char: "\EA09";
+}
+	@if $filename == "cat-housing" {
+	$char: "\EA0A";
+}
+	@if $filename == "cat-large-area-forecasts" {
+	$char: "\EA0B";
+}
+	@if $filename == "cat-population-forecasts" {
+	$char: "\EA0C";
+}
+	@if $filename == "cat-transport-comms" {
+	$char: "\EA0D";
+}
+	@if $filename == "cat-work-income" {
+	$char: "\EA0E";
+}
+	@if $filename == "catpop" {
+	$char: "\EA0F";
+}
+	@if $filename == "checkbox-checked" {
+	$char: "\EA10";
+}
+	@if $filename == "checkbox" {
+	$char: "\EA11";
+}
+	@if $filename == "chevron-down" {
+	$char: "\EA12";
+}
+	@if $filename == "chevron-left" {
+	$char: "\EA13";
+}
+	@if $filename == "chevron-right" {
+	$char: "\EA14";
+}
+	@if $filename == "chevron-up" {
+	$char: "\EA15";
+}
+	@if $filename == "clear" {
+	$char: "\EA16";
+}
+	@if $filename == "close" {
+	$char: "\EA17";
+}
+	@if $filename == "cross-circle-solid" {
+	$char: "\EA18";
+}
+	@if $filename == "cross" {
+	$char: "\EA19";
+}
+	@if $filename == "down" {
+	$char: "\EA1A";
+}
+	@if $filename == "drag" {
+	$char: "\EA1B";
+}
+	@if $filename == "edit" {
+	$char: "\EA1C";
+}
+	@if $filename == "filter-remove" {
+	$char: "\EA1D";
+}
+	@if $filename == "filter" {
+	$char: "\EA1E";
+}
+	@if $filename == "folder" {
+	$char: "\EA1F";
+}
+	@if $filename == "hamburger" {
+	$char: "\EA20";
+}
+	@if $filename == "hidden" {
+	$char: "\EA21";
+}
+	@if $filename == "histogram" {
+	$char: "\EA22";
+}
+	@if $filename == "info" {
+	$char: "\EA23";
+}
+	@if $filename == "layers" {
+	$char: "\EA24";
+}
+	@if $filename == "left" {
+	$char: "\EA25";
+}
+	@if $filename == "locate" {
+	$char: "\EA26";
+}
+	@if $filename == "locked" {
+	$char: "\EA27";
+}
+	@if $filename == "minus-solid" {
+	$char: "\EA28";
+}
+	@if $filename == "minus" {
+	$char: "\EA29";
+}
+	@if $filename == "options" {
+	$char: "\EA2A";
+}
+	@if $filename == "pin" {
+	$char: "\EA2B";
+}
+	@if $filename == "plus" {
+	$char: "\EA2C";
+}
+	@if $filename == "remove" {
+	$char: "\EA2D";
+}
+	@if $filename == "report" {
+	$char: "\EA2E";
+}
+	@if $filename == "right" {
+	$char: "\EA2F";
+}
+	@if $filename == "saved-view" {
+	$char: "\EA30";
+}
+	@if $filename == "search" {
+	$char: "\EA31";
+}
+	@if $filename == "share" {
+	$char: "\EA32";
+}
+	@if $filename == "star" {
+	$char: "\EA33";
+}
+	@if $filename == "table" {
+	$char: "\EA34";
+}
+	@if $filename == "tick" {
+	$char: "\EA35";
+}
+	@if $filename == "trash" {
+	$char: "\EA36";
+}
+	@if $filename == "un-pin" {
+	$char: "\EA37";
+}
+	@if $filename == "unlocked" {
+	$char: "\EA38";
+}
+	@if $filename == "up" {
+	$char: "\EA39";
+}
+	@if $filename == "visible" {
+	$char: "\EA3A";
+}
+
+@return $char;
+}
+
+@mixin id-icons($filename, $insert: before, $extend: true) {
+&:#{$insert} {
+	@if $extend {
+		@extend %id-icons;
+	} @else {
+		@include id-icons-styles;
+	}
+	content: id-icons-char($filename);
+}
+}
+
+.id-icons-space {
+	@include id-icons(space);
+}
+.id-icons-add-folder {
+	@include id-icons(add-folder);
+}
+.id-icons-add-remove {
+	@include id-icons(add-remove);
+}
+.id-icons-add-selection {
+	@include id-icons(add-selection);
+}
+.id-icons-add-solid {
+	@include id-icons(add-solid);
+}
+.id-icons-add {
+	@include id-icons(add);
+}
+.id-icons-bolt {
+	@include id-icons(bolt);
+}
+.id-icons-cat-community {
+	@include id-icons(cat-community);
+}
+.id-icons-cat-default {
+	@include id-icons(cat-default);
+}
+.id-icons-cat-education {
+	@include id-icons(cat-education);
+}
+.id-icons-cat-housing {
+	@include id-icons(cat-housing);
+}
+.id-icons-cat-large-area-forecasts {
+	@include id-icons(cat-large-area-forecasts);
+}
+.id-icons-cat-population-forecasts {
+	@include id-icons(cat-population-forecasts);
+}
+.id-icons-cat-transport-comms {
+	@include id-icons(cat-transport-comms);
+}
+.id-icons-cat-work-income {
+	@include id-icons(cat-work-income);
+}
+.id-icons-catpop {
+	@include id-icons(catpop);
+}
+.id-icons-checkbox-checked {
+	@include id-icons(checkbox-checked);
+}
+.id-icons-checkbox {
+	@include id-icons(checkbox);
+}
+.id-icons-chevron-down {
+	@include id-icons(chevron-down);
+}
+.id-icons-chevron-left {
+	@include id-icons(chevron-left);
+}
+.id-icons-chevron-right {
+	@include id-icons(chevron-right);
+}
+.id-icons-chevron-up {
+	@include id-icons(chevron-up);
+}
+.id-icons-clear {
+	@include id-icons(clear);
+}
+.id-icons-close {
+	@include id-icons(close);
+}
+.id-icons-cross-circle-solid {
+	@include id-icons(cross-circle-solid);
+}
+.id-icons-cross {
+	@include id-icons(cross);
+}
+.id-icons-down {
+	@include id-icons(down);
+}
+.id-icons-drag {
+	@include id-icons(drag);
+}
+.id-icons-edit {
+	@include id-icons(edit);
+}
+.id-icons-filter-remove {
+	@include id-icons(filter-remove);
+}
+.id-icons-filter {
+	@include id-icons(filter);
+}
+.id-icons-folder {
+	@include id-icons(folder);
+}
+.id-icons-hamburger {
+	@include id-icons(hamburger);
+}
+.id-icons-hidden {
+	@include id-icons(hidden);
+}
+.id-icons-histogram {
+	@include id-icons(histogram);
+}
+.id-icons-info {
+	@include id-icons(info);
+}
+.id-icons-layers {
+	@include id-icons(layers);
+}
+.id-icons-left {
+	@include id-icons(left);
+}
+.id-icons-locate {
+	@include id-icons(locate);
+}
+.id-icons-locked {
+	@include id-icons(locked);
+}
+.id-icons-minus-solid {
+	@include id-icons(minus-solid);
+}
+.id-icons-minus {
+	@include id-icons(minus);
+}
+.id-icons-options {
+	@include id-icons(options);
+}
+.id-icons-pin {
+	@include id-icons(pin);
+}
+.id-icons-plus {
+	@include id-icons(plus);
+}
+.id-icons-remove {
+	@include id-icons(remove);
+}
+.id-icons-report {
+	@include id-icons(report);
+}
+.id-icons-right {
+	@include id-icons(right);
+}
+.id-icons-saved-view {
+	@include id-icons(saved-view);
+}
+.id-icons-search {
+	@include id-icons(search);
+}
+.id-icons-share {
+	@include id-icons(share);
+}
+.id-icons-star {
+	@include id-icons(star);
+}
+.id-icons-table {
+	@include id-icons(table);
+}
+.id-icons-tick {
+	@include id-icons(tick);
+}
+.id-icons-trash {
+	@include id-icons(trash);
+}
+.id-icons-un-pin {
+	@include id-icons(un-pin);
+}
+.id-icons-unlocked {
+	@include id-icons(unlocked);
+}
+.id-icons-up {
+	@include id-icons(up);
+}
+.id-icons-visible {
+	@include id-icons(visible);
+}

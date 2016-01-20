@@ -1,0 +1,28 @@
+{
+  "name": "miekons",
+  "description": "Template for generating icon fonts",
+  "main": [
+    "styles/style.scss",
+    "styles/style.css",
+    "fonts/id-icons.eot",
+    "fonts/id-icons.svg",
+    "fonts/id-icons.ttf",
+    "fonts/id-icons.woff",
+    "fonts/id-icons.woff2"
+  ],
+  "ignore": [
+    "src",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "Michael Dunbar <info@miek.com.au>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "version": "0.1.0"
+}
