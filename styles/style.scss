@@ -1,16 +1,16 @@
 $font-path: '../fonts/' !default;
 
 @font-face {
-	font-family: "id-icons";
-	src: url('#{$font-path}id-icons.eot');
-	src: url('#{$font-path}id-icons.eot?#iefix') format('eot'),
-	url('#{$font-path}id-icons.woff') format('woff'),
-	url('#{$font-path}id-icons.ttf') format('truetype'),
-	url('#{$font-path}id-icons.svg#id-icons') format('svg');
+	font-family: "miekons";
+	src: url('#{$font-path}miekons.eot');
+	src: url('#{$font-path}miekons.eot?#iefix') format('eot'),
+	url('#{$font-path}miekons.woff') format('woff'),
+	url('#{$font-path}miekons.ttf') format('truetype'),
+	url('#{$font-path}miekons.svg#miekons') format('svg');
 }
 
-@mixin id-icons-styles {
-	font-family: "id-icons";
+@mixin miekons-styles {
+	font-family: "miekons";
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-style: normal;
@@ -21,11 +21,11 @@ $font-path: '../fonts/' !default;
 	text-transform: none;
 }
 
-%id-icons {
-	@include id-icons-styles;
+%miekons {
+	@include miekons-styles;
 }
 
-@function id-icons-char($filename) {
+@function miekons-char($filename) {
 	$char: "";
 
 	@if $filename == "space" {
@@ -209,191 +209,191 @@ $font-path: '../fonts/' !default;
 @return $char;
 }
 
-@mixin id-icons($filename, $insert: before, $extend: true) {
+@mixin miekons($filename, $insert: before, $extend: true) {
 &:#{$insert} {
 	@if $extend {
-		@extend %id-icons;
+		@extend %miekons;
 	} @else {
-		@include id-icons-styles;
+		@include miekons-styles;
 	}
-	content: id-icons-char($filename);
+	content: miekons-char($filename);
 }
 }
 
-.id-icons-space {
-	@include id-icons(space);
+.miekons-space {
+	@include miekons(space);
 }
-.id-icons-add-folder {
-	@include id-icons(add-folder);
+.miekons-add-folder {
+	@include miekons(add-folder);
 }
-.id-icons-add-remove {
-	@include id-icons(add-remove);
+.miekons-add-remove {
+	@include miekons(add-remove);
 }
-.id-icons-add-selection {
-	@include id-icons(add-selection);
+.miekons-add-selection {
+	@include miekons(add-selection);
 }
-.id-icons-add-solid {
-	@include id-icons(add-solid);
+.miekons-add-solid {
+	@include miekons(add-solid);
 }
-.id-icons-add {
-	@include id-icons(add);
+.miekons-add {
+	@include miekons(add);
 }
-.id-icons-bolt {
-	@include id-icons(bolt);
+.miekons-bolt {
+	@include miekons(bolt);
 }
-.id-icons-cat-community {
-	@include id-icons(cat-community);
+.miekons-cat-community {
+	@include miekons(cat-community);
 }
-.id-icons-cat-default {
-	@include id-icons(cat-default);
+.miekons-cat-default {
+	@include miekons(cat-default);
 }
-.id-icons-cat-education {
-	@include id-icons(cat-education);
+.miekons-cat-education {
+	@include miekons(cat-education);
 }
-.id-icons-cat-housing {
-	@include id-icons(cat-housing);
+.miekons-cat-housing {
+	@include miekons(cat-housing);
 }
-.id-icons-cat-large-area-forecasts {
-	@include id-icons(cat-large-area-forecasts);
+.miekons-cat-large-area-forecasts {
+	@include miekons(cat-large-area-forecasts);
 }
-.id-icons-cat-population-forecasts {
-	@include id-icons(cat-population-forecasts);
+.miekons-cat-population-forecasts {
+	@include miekons(cat-population-forecasts);
 }
-.id-icons-cat-transport-comms {
-	@include id-icons(cat-transport-comms);
+.miekons-cat-transport-comms {
+	@include miekons(cat-transport-comms);
 }
-.id-icons-cat-work-income {
-	@include id-icons(cat-work-income);
+.miekons-cat-work-income {
+	@include miekons(cat-work-income);
 }
-.id-icons-catpop {
-	@include id-icons(catpop);
+.miekons-catpop {
+	@include miekons(catpop);
 }
-.id-icons-checkbox-checked {
-	@include id-icons(checkbox-checked);
+.miekons-checkbox-checked {
+	@include miekons(checkbox-checked);
 }
-.id-icons-checkbox {
-	@include id-icons(checkbox);
+.miekons-checkbox {
+	@include miekons(checkbox);
 }
-.id-icons-chevron-down {
-	@include id-icons(chevron-down);
+.miekons-chevron-down {
+	@include miekons(chevron-down);
 }
-.id-icons-chevron-left {
-	@include id-icons(chevron-left);
+.miekons-chevron-left {
+	@include miekons(chevron-left);
 }
-.id-icons-chevron-right {
-	@include id-icons(chevron-right);
+.miekons-chevron-right {
+	@include miekons(chevron-right);
 }
-.id-icons-chevron-up {
-	@include id-icons(chevron-up);
+.miekons-chevron-up {
+	@include miekons(chevron-up);
 }
-.id-icons-clear {
-	@include id-icons(clear);
+.miekons-clear {
+	@include miekons(clear);
 }
-.id-icons-close {
-	@include id-icons(close);
+.miekons-close {
+	@include miekons(close);
 }
-.id-icons-cross-circle-solid {
-	@include id-icons(cross-circle-solid);
+.miekons-cross-circle-solid {
+	@include miekons(cross-circle-solid);
 }
-.id-icons-cross {
-	@include id-icons(cross);
+.miekons-cross {
+	@include miekons(cross);
 }
-.id-icons-down {
-	@include id-icons(down);
+.miekons-down {
+	@include miekons(down);
 }
-.id-icons-drag {
-	@include id-icons(drag);
+.miekons-drag {
+	@include miekons(drag);
 }
-.id-icons-edit {
-	@include id-icons(edit);
+.miekons-edit {
+	@include miekons(edit);
 }
-.id-icons-filter-remove {
-	@include id-icons(filter-remove);
+.miekons-filter-remove {
+	@include miekons(filter-remove);
 }
-.id-icons-filter {
-	@include id-icons(filter);
+.miekons-filter {
+	@include miekons(filter);
 }
-.id-icons-folder {
-	@include id-icons(folder);
+.miekons-folder {
+	@include miekons(folder);
 }
-.id-icons-hamburger {
-	@include id-icons(hamburger);
+.miekons-hamburger {
+	@include miekons(hamburger);
 }
-.id-icons-hidden {
-	@include id-icons(hidden);
+.miekons-hidden {
+	@include miekons(hidden);
 }
-.id-icons-histogram {
-	@include id-icons(histogram);
+.miekons-histogram {
+	@include miekons(histogram);
 }
-.id-icons-info {
-	@include id-icons(info);
+.miekons-info {
+	@include miekons(info);
 }
-.id-icons-layers {
-	@include id-icons(layers);
+.miekons-layers {
+	@include miekons(layers);
 }
-.id-icons-left {
-	@include id-icons(left);
+.miekons-left {
+	@include miekons(left);
 }
-.id-icons-locate {
-	@include id-icons(locate);
+.miekons-locate {
+	@include miekons(locate);
 }
-.id-icons-locked {
-	@include id-icons(locked);
+.miekons-locked {
+	@include miekons(locked);
 }
-.id-icons-minus-solid {
-	@include id-icons(minus-solid);
+.miekons-minus-solid {
+	@include miekons(minus-solid);
 }
-.id-icons-minus {
-	@include id-icons(minus);
+.miekons-minus {
+	@include miekons(minus);
 }
-.id-icons-options {
-	@include id-icons(options);
+.miekons-options {
+	@include miekons(options);
 }
-.id-icons-pin {
-	@include id-icons(pin);
+.miekons-pin {
+	@include miekons(pin);
 }
-.id-icons-plus {
-	@include id-icons(plus);
+.miekons-plus {
+	@include miekons(plus);
 }
-.id-icons-remove {
-	@include id-icons(remove);
+.miekons-remove {
+	@include miekons(remove);
 }
-.id-icons-report {
-	@include id-icons(report);
+.miekons-report {
+	@include miekons(report);
 }
-.id-icons-right {
-	@include id-icons(right);
+.miekons-right {
+	@include miekons(right);
 }
-.id-icons-saved-view {
-	@include id-icons(saved-view);
+.miekons-saved-view {
+	@include miekons(saved-view);
 }
-.id-icons-search {
-	@include id-icons(search);
+.miekons-search {
+	@include miekons(search);
 }
-.id-icons-share {
-	@include id-icons(share);
+.miekons-share {
+	@include miekons(share);
 }
-.id-icons-star {
-	@include id-icons(star);
+.miekons-star {
+	@include miekons(star);
 }
-.id-icons-table {
-	@include id-icons(table);
+.miekons-table {
+	@include miekons(table);
 }
-.id-icons-tick {
-	@include id-icons(tick);
+.miekons-tick {
+	@include miekons(tick);
 }
-.id-icons-trash {
-	@include id-icons(trash);
+.miekons-trash {
+	@include miekons(trash);
 }
-.id-icons-un-pin {
-	@include id-icons(un-pin);
+.miekons-un-pin {
+	@include miekons(un-pin);
 }
-.id-icons-unlocked {
-	@include id-icons(unlocked);
+.miekons-unlocked {
+	@include miekons(unlocked);
 }
-.id-icons-up {
-	@include id-icons(up);
+.miekons-up {
+	@include miekons(up);
 }
-.id-icons-visible {
-	@include id-icons(visible);
+.miekons-visible {
+	@include miekons(visible);
 }

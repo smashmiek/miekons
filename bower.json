@@ -4,11 +4,11 @@
   "main": [
     "styles/style.scss",
     "styles/style.css",
-    "fonts/id-icons.eot",
-    "fonts/id-icons.svg",
-    "fonts/id-icons.ttf",
-    "fonts/id-icons.woff",
-    "fonts/id-icons.woff2"
+    "fonts/miekons.eot",
+    "fonts/miekons.svg",
+    "fonts/miekons.ttf",
+    "fonts/miekons.woff",
+    "fonts/miekons.woff2"
   ],
   "ignore": [
     "src",
