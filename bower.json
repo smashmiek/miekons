@@ -1,6 +1,6 @@
 {
   "name": "miekons",
-  "description": "Template for generating icon fonts",
+  "description": "Icon font designed by Miek",
   "main": [
     "styles/style.scss",
     "styles/style.css",
@@ -15,14 +15,22 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "**/.*"
   ],
   "authors": [
-    "Michael Dunbar <info@miek.com.au>"
+    "Miek Dunbar <info@miek.com.au>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "moduleType": [],
-  "homepage": "",
-  "private": true,
-  "version": "0.1.0"
+  "homepage": "https://github.com/smashmiek/miekons",
+  "version": "0.1.0",
+  "keywords": [
+    "icon",
+    "iconfont",
+    "icon",
+    "font",
+    "sass",
+    "scss"
+  ]
 }
