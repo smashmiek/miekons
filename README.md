@@ -1,4 +1,4 @@
-# miekcons
+# miekons
 
 An icon font being developed by me
 
